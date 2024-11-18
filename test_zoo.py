@@ -6,7 +6,7 @@ class TestZoo(unittest.TestCase):
         self.zoo = Zoo()
 
     def test_negative_ticket_price(self):
-        self.assertEqual(self.zoo.get_ticket_price(-1), 0)
+        self.assertEqual(self.zoo.get_ticket_price(-1), 0) # ให้เป็น0เพราะโอกาสน้อยกว่า0ปีเป็นไปได้ยากมาก
 
     def test_age_zero_to_twelve(self):
         self.assertEqual(self.zoo.get_ticket_price(12), 50)
